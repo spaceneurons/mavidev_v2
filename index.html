@@ -1,8 +1,123 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MAVI/dev — сайты под ключ</title><meta name="description" content="MAVI/dev — дизайн и разработка сайтов под ключ"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="figma-geometry.css"></head><body>
-<header class="header" id="top"><a class="logo" href="#top"><span class="logo-icon">M</span><strong>MAVI<span>/</span>dev</strong></a><nav class="nav" id="nav"><a href="#advantages">Почему мы?</a><a href="#cases">Кейсы</a><a href="#faq">Вопрос-ответ</a></nav><a class="social" href="https://t.me/" aria-label="Telegram">✈</a><button class="menu" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button></header>
-<main><section class="intro"><div class="hero"><div class="hero-intro"><em>Привет, потенциальный клиент!</em><br>(но давайте уже перестанем быть «потенциальными»)<br>Мы собираем сайты под ключ: от идеи до запуска.</div><div class="hero-brand"><span>MAVI</span><i>/</i><b>dev</b></div><div class="hero-watermark">сайты под ключ</div><div class="hero-side">Давай создадим что-то красивое!</div><div class="hero-mobile">Давайте создадим что-то красивое!</div></div><div class="buttons"><a href="#cases" class="outline">Наши кейсы</a><a href="#contact" class="filled">Оставить заявку <span>↗</span></a></div></section>
-<div class="ticker"><div>Стратегия и смысл　 |　 Дизайн с характером　 |　 Разработка под ключ　 |　 Удобная админка　 |　 Поддержка после запуска　 |　 Стратегия и смысл</div></div>
-<section class="section advantages" id="advantages"><div class="meta"><span>почему мы?</span><span>[ преимущества ]</span></div><div class="benefits"><article><span>01</span><h3>Разработка с нуля</h3><p>Технологический стек: HTML, CSS, JavaScript. Ручная разработка без ИИ и «дыр».</p></article><article><span>02</span><h3>UI/UX дизайн</h3><p>Дизайн под вас: учитываем все пожелания и дорабатываем дизайн до тех пор, пока вы не будете довольны.</p></article><article><span>03</span><h3>Админ-панель (CMS)</h3><p>Меняйте содержание сайта самостоятельно: тексты, фото и цены. Без привязки к программистам.</p></article></div></section>
-<section class="section cases" id="cases"><div class="meta"><span>Наши работы</span><span>[ портфолио ]</span></div><h2>КЕЙСЫ</h2><div class="cases-grid"><div class="case-item"><span>01 — WEB DESIGN</span><strong>ЦИФРОВОЙ<br>ХАРАКТЕР</strong></div><div class="case-item"><span>02 — DEVELOPMENT</span><strong>НОВЫЙ<br>ВЗГЛЯД</strong></div></div></section>
-<section class="section faq" id="faq"><div class="meta"><span>Частые вопросы</span><span>[ часто задаваемые вопросы ]</span></div><div class="faq-grid"><h2>FAQ</h2><div class="questions"><details><summary>С чего мне начать?</summary><p>Напишите нам и расскажите о своей задаче. Обсудим цели и подходящий формат сайта.</p></details><details><summary>Как происходит процесс работы?</summary><p>Обсуждение задачи, структура, дизайн, разработка, проверка и запуск.</p></details><details><summary>Смогу ли я сам менять наполнение готового сайта?</summary><p>Да, при подключении CMS вы сможете обновлять контент самостоятельно.</p></details><details><summary>Точно ли не поменяется цена в процессе разработки?</summary><p>Стоимость согласовывается до начала работ, дополнительные пожелания обсуждаем отдельно.</p></details><details><summary>Как я буду получать заявки от моих клиентов?</summary><p>Настроим получение заявок удобным для вас способом.</p></details><details><summary>Какие интеграции можно добавить?</summary><p>Аналитика, CRM, формы и другие интеграции под задачи проекта.</p></details><details><summary>Можно ли подключить оплату на сайт?</summary><p>Да, при необходимости добавим интеграцию платёжного сервиса.</p></details></div></div><div class="faq-note">не нашли ответ – напишите нам</div></section>
-<section class="contact" id="contact"><p>[ контакты ]</p><h2>СОЗДАДИМ<br>ЧТО-ТО КРАСИВОЕ?</h2><a href="mailto:hello@example.com">Оставить заявку ↗</a><small>Адрес электронной почты демонстрационный и требует замены.</small></section></main><footer><strong>MAVI/dev</strong><span>© <span id="year"></span> MAVI/dev</span><a href="#top">Наверх ↑</a></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MAVI/dev — дизайн и разработка сайтов под ключ">
+  <title>MAVI/dev — сайты под ключ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top"><img src="assets/logo.svg" width="150" height="32" alt="MAVI/dev"></a>
+      <nav id="nav" class="nav" aria-label="Основная навигация">
+        <a href="#advantages">Почему мы?</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#faq">Вопрос-ответ</a>
+      </nav>
+      <a class="social" href="https://t.me/aliolsk" aria-label="Связаться в Telegram"><img src="assets/telegram.svg" width="36" height="36" alt=""></a>
+      <button class="menu" type="button" aria-label="Открыть меню" aria-controls="nav" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+    </div>
+  </header>
+  <main>
+    <section class="container intro" aria-label="MAVI/dev">
+      <div class="hero">
+        <img class="hero-texture" src="assets/hero-texture.jpg" width="1676" height="1118" alt="">
+        <img class="hero-caption" src="assets/hero-caption.svg" width="727" height="96" alt="Сайты под ключ">
+        <p class="hero-intro"><em>Привет, потенциальный клиент!</em><br>(но давайте уже перестанем быть «потенциальными»)<br>Мы собираем сайты под ключ: от идеи до запуска.</p>
+        <h1 class="hero-brand"><img src="assets/hero-brand.svg" width="794" height="132" alt="MAVI/dev"></h1>
+        <p class="hero-side">Давай создадим что-то красивое!</p>
+      </div>
+      <div class="hero-actions">
+        <a href="#cases">Наши кейсы</a>
+        <a href="#contact">Оставить заявку <img class="cta-arrow" src="assets/cta-arrow.svg" width="42" height="37" alt=""></a>
+      </div>
+    </section>
+    <div class="ticker" aria-label="Всё для запуска вашего сайта">
+      <div class="ticker-track">
+        <span>Стратегия и смысл</span><span>Дизайн с характером</span><span>Разработка под ключ</span><span>Удобная админка</span><span>Поддержка после запуска</span>
+        <span aria-hidden="true">Стратегия и смысл</span><span aria-hidden="true">Дизайн с характером</span>
+      </div>
+    </div>
+    <section class="container advantages" id="advantages" aria-label="Почему мы?">
+      <div class="section-label"><span>Почему мы?</span><span>[ Преимущества ]</span></div>
+      <div class="benefits">
+        <article><h2>Разработка с нуля</h2><p>Технологический стек: HTML, CSS, JavaScript. Ручная разработка без ИИ и «дыр».</p></article>
+        <article><h2>UI/UX дизайн</h2><p>Дизайн под вас: учитываем все пожелания и дорабатываем дизайн до тех пор, пока вы не будете довольны.</p></article>
+        <article><h2>Админ-панель (CMS)</h2><p>Меняйте содержание сайта самостоятельно: тексты, фото и цены. Без привязки к программистам.</p></article>
+      </div>
+    </section>
+    <section class="cases" id="cases" aria-labelledby="cases-title">
+      <div class="container">
+        <div class="section-label cases-label"><span>Наши работы</span><span>[ Портфолио ]</span></div>
+      </div>
+      <h2 id="cases-title"><img src="assets/cases-title.svg" width="1440" height="275" alt="Кейсы"></h2>
+      <p class="container cases-note">Сделали, проверили, запустили. Клиенты довольны (а мы – особенно)</p>
+      <div class="case-strip">
+        <div class="case-track" id="case-track" tabindex="0" aria-label="Работы">
+          <article class="case-item">
+            <div class="case-preview"></div>
+            <div class="case-info"><div><h3>ДЕТЕЙЛИНГ В ПОЛЬШЕ</h3><p>Интернет-магазин · Айдентика · Каталог</p></div><button type="button" disabled title="Ссылка на кейс отсутствует">Открыть ↗&#xfe0e;</button></div>
+          </article>
+          <article class="case-item">
+            <div class="case-preview"></div>
+            <div class="case-info"><div><h3>ДЕТЕЙЛИНГ В ПОЛЬШЕ</h3><p>Интернет-магазин · Айдентика · Каталог</p></div><button type="button" disabled title="Ссылка на кейс отсутствует">Открыть ↗&#xfe0e;</button></div>
+          </article>
+          <article class="case-item">
+            <div class="case-preview"></div>
+            <div class="case-info"><div><h3>ДЕТЕЙЛИНГ В ПОЛЬШЕ</h3><p>Интернет-магазин · Айдентика · Каталог</p></div><button type="button" disabled title="Ссылка на кейс отсутствует">Открыть ↗&#xfe0e;</button></div>
+          </article>
+        </div>
+        <button class="case-next" type="button" aria-label="Следующий кейс" aria-controls="case-track"><img src="assets/case-next.svg" width="10" height="18" alt=""></button>
+      </div>
+    </section>
+    <section class="container faq" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title"><img src="assets/faq-title.svg" width="275" height="697" alt="FAQ"></h2>
+      <div class="faq-content">
+        <div class="faq-label"><a href="#contact">Не нашли ответ – напишите нам</a><span>[ Ваши вопросы ]</span></div>
+        <div class="questions">
+          <details><summary>С чего мне начать?</summary><p>Напишите нам и расскажите о своей задаче. Обсудим цели и подходящий формат сайта.</p></details>
+          <details><summary>Как происходит процесс работы?</summary><p>Обсуждение задачи, структура, дизайн, разработка, проверка и запуск.</p></details>
+          <details><summary>Смогу ли я сам менять наполнение готового сайта?</summary><p>Да, при подключении CMS вы сможете обновлять контент самостоятельно.</p></details>
+          <details><summary>Точно ли не поменяется цена в процессе разработки?</summary><p>Стоимость согласовывается до начала работ, дополнительные пожелания обсуждаем отдельно.</p></details>
+          <details><summary>Как я буду получать заявки от моих клиентов?</summary><p>Настроим получение заявок удобным для вас способом.</p></details>
+          <details><summary>Какие интеграции можно добавить?</summary><p>Аналитика, CRM, формы и другие интеграции под задачи проекта.</p></details>
+          <details><summary>Можно ли подключить оплату на сайт?</summary><p>Да, при необходимости добавим интеграцию платёжного сервиса.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="container contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-label"><span>От идеи</span><span>До сайта</span></div>
+      <div class="contact-card">
+        <h2 id="contact-title">Оставить заявку</h2>
+        <form class="contact-form">
+          <div class="form-row">
+            <input name="name" placeholder="Ваше имя" aria-label="Ваше имя" autocomplete="name" required>
+            <select name="method" aria-label="Способ связи" required><option value="">Способ связи</option><option>Telegram</option><option>Телефон</option></select>
+          </div>
+          <input name="reply" placeholder="Ваш номер телефона / ник" aria-label="Ваш номер телефона или ник" required>
+          <textarea name="comment" placeholder="Комментарий" aria-label="Комментарий"></textarea>
+          <label class="consent"><input type="checkbox" required> <span>Я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</span></label>
+          <div class="contact-actions">
+            <button class="contact-submit" type="submit">Скопировать заявку</button>
+            <a href="https://t.me/aliolsk" target="_blank" rel="noopener">Открыть Telegram ↗&#xfe0e;</a>
+          </div>
+          <p class="contact-status" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#top"><img src="assets/logo-light.svg" width="150" height="32" alt="MAVI/dev"></a>
+        <p>Политика конфиденциальности<br>Не является офертой</p>
+      </div>
+      <div class="footer-caption"><strong>Сайты под ключ</strong><p>(этот сайт тоже сделали мы)</p></div>
+      <div class="footer-contact"><div><a href="https://t.me/aliolsk"><strong>@aliolsk</strong></a><p>быстрая связь</p></div><a href="https://t.me/aliolsk" aria-label="Связаться в Telegram"><img src="assets/telegram-light.svg" width="48" height="48" alt=""></a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
