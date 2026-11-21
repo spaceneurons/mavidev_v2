@@ -59,3 +59,17 @@ main{position:relative;min-height:2701px}
 footer{min-height:78px}
 }
 @media(max-width:700px){.cases{overflow:hidden}}
+
+/* Corrections checked against user's original desktop Figma CSS export. */
+@media(min-width:701px){
+.header{height:80px;position:relative;padding:0;max-width:none;border:1px solid #c9c9c9;gap:0}
+.header .logo{position:absolute;left:max(0px,calc((100% - 1440px)/2 + 98px));top:24px;gap:17px}
+.header .logo-icon{width:32px;height:32px;border-radius:6.06061px;font-family:'Cal Sans',Manrope,sans-serif;font-size:17.4545px;letter-spacing:3.39394px;font-weight:400}
+.header .logo strong{font-size:19px;line-height:19.07px;letter-spacing:0;font-weight:600}
+.header .nav{position:absolute;left:max(0px,calc((100% - 1440px)/2 + 915px));top:30px;gap:35px;margin:0;font-family:'SF Pro',Arial,sans-serif;font-size:15px;letter-spacing:-.955556px;font-weight:500;white-space:nowrap}
+.header .social{position:absolute;left:max(0px,calc((100% - 1440px)/2 + 1305px));top:22px;width:36px;height:36px}
+.intro{margin-top:68px}
+.hero-brand span{font-family:'Cal Sans',Manrope,sans-serif;font-weight:400}
+.hero-brand i,.hero-brand b{font-family:Aspekta,Inter,sans-serif;font-weight:100}
+.hero-watermark{font-family:Manrope,sans-serif}
+}
