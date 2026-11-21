@@ -58,3 +58,4 @@ main{position:relative;min-height:2701px}
 .contact{position:absolute;top:2295px;left:0;right:0;min-height:470px}
 footer{min-height:78px}
 }
+@media(max-width:700px){.cases{overflow:hidden}}
